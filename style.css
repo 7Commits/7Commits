@@ -92,6 +92,11 @@ nav a:hover {
     background: #fff;
 }
 
+.intro-text {
+    text-align: center;
+}
+
+
 .intro-content {
     display: grid;
     gap: 2rem;
