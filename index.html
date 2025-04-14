@@ -1,156 +1,224 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7Commits</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        window.addEventListener('scroll', function() {
-            const btn = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                // Se abbiamo scrollato più di 300px, mostra il bottone
-                btn.style.display = 'block';
-            } else {
-                // Altrimenti, nascondilo, OK LIN u the goat
-                btn.style.display = 'none';
-            }
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7Commits</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo_big.png">
 </head>
+
 <body>
-    <nav>
-        <div class = "logo">
-            <a href="index.html">
-                <img class="logoImg" src="images/logo.png" alt="logo">
-            </a>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="glossary.html">Glossario</a></li>
-        </ul>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="7Commits Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="#pb">PB</a>
+      <a href="#rtb">RTB</a>
+      <a href="#candidatura">Candidatura</a>
+      <a href="glossary.html">Glossario</a>
     </nav>
+  </header>
 
-    <section class="intro-section">
-        <h2>Informazioni</h2>
-        <div class="intro-content">
-            <div class="intro-text">
-                <p>Gruppo di progetto del corso di Ingegneria Del Software, UniPd 2024/2025</p>
-                <p>Il capitolato scelto è: <a href="https://www.math.unipd.it/~tullio/IS-1/2024/Progetto/C1.pdf" target="_blank" rel="noopener noreferrer">Artificial QI</a></p>
-                <h4>Riferimenti:</h4>
-                <p><a href="https://github.com/7Commits/SWE" target="_blank" rel="noopener noreferrer">Repository della documentazione</a></p>
-                <p><a href="https://github.com/7Commits/PoC" target="_blank" rel="noopener noreferrer">Repository del Proof of Concept</a></p>
-            </div>
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="images/logo_big.png" alt="Logo secondario" class="hero-icon" />
+      <div class="hero-text">
+        <h1>Gruppo 20 - 7Commits</h1>
+        <p>Gruppo di progetto del corso di Ingegneria Del Software, UniPd 2024/2025</p>
+        <p>Il capitolato scelto è: <a href="https://www.math.unipd.it/~tullio/IS-1/2024/Progetto/C1.pdf" target="_blank"
+            rel="noopener noreferrer">Artificial QI</a></p>
+        <h3>Riferimenti:</h3>
+        <p><a href="https://github.com/7Commits/SWE" target="_blank" rel="noopener noreferrer">Repository della
+            documentazione</a></p>
+        <p><a href="https://github.com/7Commits/PoC" target="_blank" rel="noopener noreferrer">Repository del Proof of
+            Concept</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezioni principali -->
+  <section id="candidatura" class="section">
+    <h2>Candidatura</h2>
+    <div class="documenti">
+      <h3>Documenti</h3>
+      <ul>
+        <li><a href="docs/Candidatura/Lettera%20di%20candidatura.pdf" target="_blank">📄 Lettera di candidatura</a></li>
+        <li><a href="docs/Candidatura/Analisi_Capitolati_v1.1.pdf" target="_blank">📄 Analisi capitolati</a></li>
+        <li><a href="docs/Candidatura/Dichiarazione_Impegni_v1.1.pdf" target="_blank">📄 Dichiarazione impegni</a></li>
+      </ul>
+    </div>
+
+    <div class="verbali">
+      <h3>Verbali</h3>
+      <div class="verbali-wrapper">
+        <div class="verbale-box">
+          <h4>Verbali Interni</h4>
+          <ul>
+            <li><a href="docs/Candidatura/Verbali/Interni/VI_2025_03_06_v1.0.pdf" target="_blank">📝 2025-03-06_v1.0</a>
+            </li>
+            <li><a href="docs/Candidatura/Verbali/Interni/VI_2025_03_10_v1.1.pdf" target="_blank">📝 2025-03-10_v1.1</a>
+            </li>
+            <li><a href="docs/Candidatura/Verbali/Interni/VI_2025_03_13_v1.1.pdf" target="_blank">📝 2025-03-13_v1.1</a>
+            </li>
+            <li><a href="docs/Candidatura/Verbali/Interni/VI_2025_03_17_v1.1.pdf" target="_blank">📝 2025-03-17_v1.1</a>
+            </li>
+          </ul>
         </div>
-    </section>
-
-    <section class="news-section">
-        <h2>Candidatura</h2>
-        <ul>
-            <li><a target="_blank" href="docs/Candidatura/Lettera%20di%20candidatura.pdf">Lettera di Candidatura</a></li>
-            <li><a target="_blank" href="docs/Candidatura/Analisi_Capitolati_v1.1.pdf">Analisi capitolati </a><span class = "version">v1.1</span></li>
-            <li><a target="_blank" href="docs/Candidatura/Dichiarazione_Impegni_v1.1.pdf">Dichiarazione impegni </a><span class = "version">v1.1</span></li>
-        </ul>
-        <div class="news-grid">
-            <div class="news-item">
-                <h3>Verbali</h3>
-                <dl class ="documenti">
-                    <h4>Interni:</h4>
-                    <dd><a target="_blank" href="docs/Candidatura/Verbali/Interni/VI_2025_03_06_v1.0.pdf">2025-03-06 </a><span class = "version">v1.0</span></dd>
-                    <dd><a target="_blank" href="docs/Candidatura/Verbali/Interni/VI_2025_03_10_v1.1.pdf">2025-03-10 </a><span class = "version">v1.1</span></dd>
-                    <dd><a target="_blank" href="docs/Candidatura/Verbali/Interni/VI_2025_03_13_v1.0.pdf">2025-03-13 </a><span class = "version">v1.0</span></dd>
-                    <dd><a target="_blank" href="docs/Candidatura/Verbali/Interni/VI_2025_03_17_v1.0.pdf">2025-03-17 </a><span class = "version">v1.0</span></dd>
-                    <h4>Esterni:</h4>
-                    <dd><a target="_blank" href="docs/Candidatura/Verbali/Esterni/VE_2025_03_12_SyncLab_v1.1_signed.pdf">2025-03-12 SyncLab </a><span class = "version">v1.1</span></dd>
-                    <dd><a target="_blank" href="docs/Candidatura/Verbali/Esterni/VE_2025_03_12_Zucchetti_v1.1_signed.pdf">2025-03-12 Zucchetti</a><span class = "version">v1.1</span></dd>
-                </dl>
-            </div>
+        <div class="verbale-box">
+          <h4>Verbali Esterni</h4>
+          <ul>
+            <li><a href="docs/Candidatura/Verbali/Esterni/VE_2025_03_12_SyncLab_v1.1_signed.pdf" target="_blank">📝
+                2025-03-12 SyncLab</a></li>
+            <li><a href="docs/Candidatura/Verbali/Esterni/VE_2025_03_12_Zucchetti_v1.1_signed.pdf" target="_blank">📝
+                2025-03-12 Zucchetti</a></li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="news-section">
-        <h2>Requirements and Technology Baseline</h2>
-        <div class="news-grid">
-            <div class="news-item">
-                <h3>Documentazione</h3>
-                <dl class ="documenti">
-                    <h4>Interna:</h4>
-                    <h4>Esterna:</h4>
-                </dl>
-                <h3>Verbali</h3>
-                <dl class ="documenti">
-                    <h4>Interni:</h4>
-                    <dd><a target="_blank" href="docs/RTB/Interni/Verbali/VI_2025_03_30_v1.1.pdf">2025-03-30 </a><span class = "version">v1.1</span></dd>
-                    <dd><a target="_blank" href="docs/RTB/Interni/Verbali/VI_2025_04_03_v1.1.pdf">2025-04-03 </a><span class = "version">v1.1</span></dd>
-                    <dd><a target="_blank" href="docs/RTB/Interni/Verbali/VI_2025_04_13_v1.0.pdf">2025-04-13 </a><span class = "version">v1.0</span></dd>
-                    <h4>Esterni:</h4>
-                    <dd><a target="_blank" href="docs/RTB/Esterni/Verbali/VE_2025_04_04_v1.1_signed.pdf">2025-04-04 </a><span class = "version">v1.1</span></dd>
-                </dl>
-            </div>
+  <section id="rtb" class="section">
+    <h2>Requirements and Technology Baseline - RTB</h2>
+    <div class="documenti">
+      <h3>Documenti</h3>
+      <ul>
+        <li><a target="_blank">📄 </a></li>
+      </ul>
+    </div>
+
+    <div class="verbali">
+      <h3>Verbali</h3>
+      <div class="verbali-wrapper">
+        <div class="verbale-box">
+          <h4>Verbali Interni</h4>
+          <ul>
+            <li><a href="docs/RTB/Interni/Verbali/VI_2025_03_30_v1.1.pdf" target="_blank">📝 2025-03-30_v1.1</a></li>
+            <li><a href="docs/RTB/Interni/Verbali/VI_2025_04_03_v1.1.pdf" target="_blank">📝 2025-04-03_v1.1</a></li>
+            <li><a href="docs/RTB/Interni/Verbali/VI_2025_04_13_v1.0.pdf" target="_blank">📝 2025-04-13_v1.0</a></li>
+          </ul>
         </div>
-    </section>
-
-    <section class="news-section">
-        <h2>Product Baseline</h2>
-        <div class="news-grid">
-            <div class="news-item">
-                <h3>Documentazione</h3>
-                <dl class ="documenti">
-                    <h4>Interna:</h4>
-                    <h4>Esterna:</h4>
-                </dl>
-                <h3>Verbali</h3>
-                <dl class ="documenti">
-                    <h4>Interni:</h4>
-                    <h4>Esterni:</h4>
-                </dl>
-            </div>
+        <div class="verbale-box">
+          <h4>Verbali Esterni</h4>
+          <ul>
+            <li><a href="docs/RTB/Esterni/Verbali/VE_2025_04_04_v1.1_signed.pdf" target="_blank">📝 2025-04-4_v1.1</a>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="intro-section">
-        <h2>Contatti</h2>
-        <div class="intro-content">
-            <div class="intro-text">
-                <p>Email di riferimento: <a href="mailto:7commits@gmail.com">7commits@gmail.com</a></p>
-                <p>I membri del gruppo sono:</p>
-            </div>
+  <section id="pb" class="section">
+    <h2>Product Baseline - PB</h2>
+    <div class="documenti">
+      <h3>Documenti</h3>
+      <ul>
+        <li><a target="_blank">📄 </a></li>
+      </ul>
+    </div>
+    <div class="verbali">
+      <h3>Verbali</h3>
+      <div class="verbali-wrapper">
+        <div class="verbale-box">
+          <h4>Verbali Interni</h4>
+          <ul>
+            <li><a target="_blank">📝 </a></li>
+          </ul>
         </div>
-        <ul>
-            <li>Marco Cola <span class="matricola">2079237</span></li>
-            <li>Ruize Lin <span class="matricola">2068236</span></li>
-            <li>Michele Ogniben <span class="matricola">2042325</span></li>
-            <li>Stefano Dal Poz <span class="matricola">1204683</span></li>
-            <li>Giulia Hu <span class="matricola">2009118</span></li>
-            <li>Mattia Piva <span class="matricola">2008065</span></li>
-            <li>Giada Rossi <span class="matricola">2045353</span></li>
-        </ul>
-    </section>
-
-    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">↑ Torna su</button>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Contatti</h4>
-                <p>Mail di contatto: <a href="mailto:7commits@gmail.com">7commits@gmail.com</a></p>
-            </div>
-            <div class="footer-section">
-                <h4>Menu</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="glossary.html">Glossario</a></li>
-                </ul>
-            </div>
+        <div class="verbale-box">
+          <h4>Verbali Esterni</h4>
+          <ul>
+            <li><a target="_blank">📝</a></li>
+          </ul>
         </div>
-        <div class="copyright">
-            <p>© 2025 7Commits</p>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
+  <section id="contatti" class="section contatti">
+    <h2>Contatti</h2>
+    <div class="email">
+      <p>📧 <a href="mailto:7commits@gmail.com">7commits@gmail.com</a></p>
+    </div>
+    <div class="team">
+      <h3>Team 7Commits</h3>
+      <div class="team-grid">
+        <div class="team-member">
+          <p><strong>Marco Cola</strong></p>
+          <p>Matricola: 2079237</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Stefano Dal Poz</strong></p>
+          <p>Matricola: 1204683</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Giulia Hu</strong></p>
+          <p>Matricola: 2009118</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Ruize Lin</strong></p>
+          <p>Matricola: 2068236</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Michele Ogniben</strong></p>
+          <p>Matricola: 2042325</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Mattia Piva</strong></p>
+          <p>Matricola: 2008065</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Giada Rossi</strong></p>
+          <p>Matricola: 2045353</p>
+        </div>
+        <!-- Aggiungi altri membri qui -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>7Commits © 2025 All rights reserved</p>
+  </footer>
+  <button id="backToTop">
+    ⬆ Torna su
+  </button>
+  <script>
+    const btn = document.getElementById("backToTop");
+    window.onscroll = () => {
+      if (window.scrollY > 300) {
+        btn.classList.add("show");
+      } else {
+        btn.classList.remove("show");
+      }
+    };
+
+    btn.onclick = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    };
+  </script>
+  <script>
+    // Aggiungi un listener agli eventi di click sui link della navbar
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Preveniamo il comportamento di default del link
+
+        // Scorriamo fino alla sezione corrispondente con un movimento morbido
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+  </script>
 </body>
-</html> 
+
+</html>
