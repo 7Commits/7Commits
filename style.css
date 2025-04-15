@@ -99,6 +99,12 @@ body {
     margin-bottom: 1rem;
 }
 
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
 .hero p {
     font-size: 1.2rem;
     color: #333;
@@ -294,27 +300,46 @@ body {
     font-weight: bold;
 }
 
+.letters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 .letters a {
     text-decoration: none;
     font-weight: bold;
-    color: #007bff;
-    margin: 0 5px;
+    color: var(--primary);
+    margin: 0 6px;
+    background-color: var(--white);
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
 }
 
 .letters a:hover {
-    text-decoration: underline;
+    background-color: var(--primary);
+    color: var(--white);
 }
+
 
 /* Sezioni per le lettere */
 .glossary-group {
     margin-bottom: 30px;
+    scroll-margin-top: 120px;
 }
 
 .glossary-group h3 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    border-left: 6px solid var(--accent);
+    padding-left: 12px;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
 }
+
 
 /* Stile per le voci del glossario */
 .glossary-item {
