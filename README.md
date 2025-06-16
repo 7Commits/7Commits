@@ -8,9 +8,11 @@ Il sito fornisce informazioni sui membri, i verbali delle riunioni, la documenta
 - **HTML5** - Struttura della pagina
 - **CSS3** - Stile e layout
 
-## Repository della documentazione:
+## Repository:
 
-- GitHub: [@7Commits](https://github.com/7Commits/SWE)
+- GitHub: [Repository della documentazione](https://github.com/7Commits/SWE)
+- GitHub: [Repository del PoC](https://github.com/7Commits/PoC)
+
 
 ## Per qualsiasi domanda:
 
