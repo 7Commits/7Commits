@@ -12,6 +12,7 @@ Il sito fornisce informazioni sui membri, i verbali delle riunioni, la documenta
 
 - GitHub: [Repository della documentazione](https://github.com/7Commits/SWE)
 - GitHub: [Repository del PoC](https://github.com/7Commits/PoC)
+- GitHub: [Repository del MVP](https://github.com/7Commits/MVP)
 
 
 ## Per qualsiasi domanda:
