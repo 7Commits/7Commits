@@ -353,3 +353,9 @@ body {
 .glossary-item h4 {
     margin-bottom: 5px;
 }
+
+.centered {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
